@@ -1,6 +1,0 @@
-2023-11-04 07:22:46	38.9s	naughty_hypatia	ERR	ba7234959405b7a6df253d6d03158a7cde030c96	d869504f-a7b2-42b3-b438-bef1d4e7bb59	nextflow run nf-core/mag -r 2.5.0 -profile test --outdir test2
-2023-11-04 07:30:43	-	extravagant_mcnulty	-	ba7234959405b7a6df253d6d03158a7cde030c96	c48e39ba-dacd-4d78-8c12-64cd70bacf40	nextflow run nf-core/mag -r 2.5.0 -profile test --outdir test2 --input SRR26459594.fastq.gz
-2023-11-04 07:32:14	-	sleepy_marconi	-	ba7234959405b7a6df253d6d03158a7cde030c96	54b46e1d-78a1-42bf-be16-e19308bd4499	nextflow run nf-core/mag -r 2.5.0 -profile test --outdir test2 --input './*.fastq.gz'
-2023-11-04 07:33:12	-	magical_booth	-	ba7234959405b7a6df253d6d03158a7cde030c96	6cc2fa76-8870-4cfb-9a9f-dfb0f2f4c5e2	nextflow run nf-core/mag -r 2.5.0 -profile test --outdir test2 --input '/home/bio/projects/metagenomics/*.fastq.gz'
-2023-11-04 08:21:20	38s	spontaneous_poitras	ERR	ba7234959405b7a6df253d6d03158a7cde030c96	62e42bd8-84a5-4a34-b807-9ce58caba895	nextflow run nf-core/mag -r 2.5.0 -profile test --outdir out_test
-2023-11-06 12:46:23	-	exotic_lovelace	-	ba7234959405b7a6df253d6d03158a7cde030c96	dd17404e-f2e5-4e86-a97a-b9478d08bafb	nextflow run nf-core/mag -r 2.5.0 -profile docker --input sheet.csv --outdir hey --max-memory 20
