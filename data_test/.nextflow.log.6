@@ -1,0 +1,1160 @@
+Nov-06 13:12:04.569 [main] DEBUG nextflow.cli.Launcher - $> nextflow run nf-core/mag -r 2.5.0 -profile singularity --input sheet.csv --outdir hey
+Nov-06 13:12:04.701 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.0
+Nov-06 13:12:04.734 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/bio/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.2,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.0
+Nov-06 13:12:04.750 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Nov-06 13:12:04.752 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Nov-06 13:12:04.758 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Nov-06 13:12:04.779 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Nov-06 13:12:04.806 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /home/bio/.nextflow/scm
+Nov-06 13:12:06.834 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/bio/.nextflow/assets/nf-core/mag/.git/config; branch: master; remote: origin; url: https://github.com/nf-core/mag.git
+Nov-06 13:12:06.865 [main] DEBUG nextflow.scm.RepositoryFactory - Found Git repository result: [RepositoryFactory]
+Nov-06 13:12:06.877 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/bio/.nextflow/assets/nf-core/mag/.git/config; branch: master; remote: origin; url: https://github.com/nf-core/mag.git
+Nov-06 13:12:08.678 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /home/bio/.nextflow/assets/nf-core/mag/nextflow.config
+Nov-06 13:12:08.679 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/bio/.nextflow/assets/nf-core/mag/nextflow.config
+Nov-06 13:12:08.697 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity`
+Nov-06 13:12:11.722 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [cfc_dev, ifb_core, denbi_qbic, alice, mjolnir_globe, uppmax, test_binning_entry, incliva, uge, rosalind_uge, test_nothing, lugh, unibe_ibu, vai, czbiohub_aws, jax, ccga_med, scw, tigem, tubingen_apg, google, apollo, ipop_up, pdc_kth, googlels, eddie, medair, test_host_rm, biowulf, apptainer, bi, bigpurple, adcra, cedars, pawsey_setonix, vsc_kul_uhasselt, pawsey_nimbus, ucl_myriad, utd_ganymede, charliecloud, icr_davros, test_ancient_dna, ceres, munin, arm, rosalind, test_binrefinement, hasta, cfc, uzh, test_hybrid_host_rm, test_busco_auto, ebi_codon_slurm, ebc, ku_sund_dangpu, ccga_dx, test_hybrid, crick, marvin, biohpc_gen, shifter, mana, mamba, unc_lccc, wehi, awsbatch, wustl_htcf, imperial, maestro, software_license, genotoul, nci_gadi, test_no_clipping, abims, janelia, nu_genomics, googlebatch, oist, sahmri, mpcdf, leicester, vsc_ugent, sage, cambridge, podman, ebi_codon, cheaha, xanadu, test, computerome, ucd_sonic, seg_globe, sanger, dkfz, pasteur, ethz_euler, test_full, imb, tuos_stanage, azurebatch, hki, test_adapterremoval, crukmi, docker, engaging, gis, hypatia, psmn, eva, test_virus_identification, fgcz, conda, crg, singularity, uw_hyak_pedslabs, prince, utd_sysbio, debug, genouest, cbe, test_bbnorm, phoenix, gitpod, seawulf, uod_hpc, fub_curta, uct_hpc, aws_tower, binac]
+Nov-06 13:12:11.791 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Nov-06 13:12:11.792 [main] INFO  nextflow.cli.CmdRun - Launching `https://github.com/nf-core/mag` [zen_mayer] DSL2 - revision: ba72349594 [2.5.0]
+Nov-06 13:12:11.793 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins declared=[nf-validation]
+Nov-06 13:12:11.794 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Nov-06 13:12:11.794 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-validation]
+Nov-06 13:12:11.794 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-validation version: latest
+Nov-06 13:12:12.384 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-validation@1.1.1' resolved
+Nov-06 13:12:12.385 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-validation@1.1.1'
+Nov-06 13:12:12.393 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-validation@1.1.1
+Nov-06 13:12:12.403 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/bio/.nextflow/secrets/store.json
+Nov-06 13:12:12.408 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@6591f8ea] - activable => nextflow.secret.LocalSecretsProvider@6591f8ea
+Nov-06 13:12:12.528 [main] DEBUG nextflow.Session - Session UUID: 3885c15f-29db-4806-8ba5-05ca086d72c6
+Nov-06 13:12:12.528 [main] DEBUG nextflow.Session - Run name: zen_mayer
+Nov-06 13:12:12.529 [main] DEBUG nextflow.Session - Executor pool size: 8
+Nov-06 13:12:12.543 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Nov-06 13:12:12.552 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Nov-06 13:12:12.589 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.10.0 build 5889
+  Created: 15-10-2023 15:07 UTC (20:07 UZST)
+  System: Linux 6.2.0-35-generic
+  Runtime: Groovy 3.0.19 on Java HotSpot(TM) 64-Bit Server VM 17.0.8+9-LTS-211
+  Encoding: UTF-8 (UTF-8)
+  Process: 28048@bio [127.0.1.1]
+  CPUs: 8 - Mem: 15.3 GB (302.3 MB) - Swap: 2 GB (2 GB)
+Nov-06 13:12:12.617 [main] DEBUG nextflow.Session - Work-dir: /home/bio/projects/metagenomics/data_test/work [ext2/ext3]
+Nov-06 13:12:12.656 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Nov-06 13:12:12.681 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Nov-06 13:12:12.890 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Nov-06 13:12:12.906 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Nov-06 13:12:13.022 [main] DEBUG nextflow.Session - Session start
+Nov-06 13:12:13.028 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /home/bio/projects/metagenomics/data_test/hey/pipeline_info/execution_trace_2023-11-06_13-12-10.txt
+Nov-06 13:12:13.041 [main] DEBUG nextflow.Session - Using default localLib path: /home/bio/.nextflow/assets/nf-core/mag/lib
+Nov-06 13:12:13.045 [main] DEBUG nextflow.Session - Adding to the classpath library: /home/bio/.nextflow/assets/nf-core/mag/lib
+Nov-06 13:12:13.046 [main] DEBUG nextflow.Session - Adding to the classpath library: /home/bio/.nextflow/assets/nf-core/mag/lib/nfcore_external_java_deps.jar
+Nov-06 13:12:13.981 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Nov-06 13:12:13.997 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validateParameters:validateParameters, paramsHelp:paramsHelp]; plugin Id: nf-validation
+Nov-06 13:12:14.020 [main] DEBUG nextflow.validation.SchemaValidator - Starting parameters validation
+Nov-06 13:12:14.347 [main] DEBUG n.validation.DirectoryPathValidator - S3 paths are not supported by 'DirectoryPathValidator': 's3://ngi-igenomes/igenomes'
+Nov-06 13:12:14.355 [main] DEBUG nextflow.validation.SchemaValidator - Finishing parameters validation
+Nov-06 13:12:17.601 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryLog:paramsSummaryLog, paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-validation
+Nov-06 13:12:17.743 [main] INFO  nextflow.Nextflow - 
+
+-[2m----------------------------------------------------[0m-
+                                        [0;32m,--.[0;30m/[0;32m,-.[0m
+[0;34m        ___     __   __   __   ___     [0;32m/,-._.--~'[0m
+[0;34m  |\ | |__  __ /  ` /  \ |__) |__         [0;33m}  {[0m
+[0;34m  | \| |       \__, \__/ |  \ |___     [0;32m\`-._,-`-,[0m
+                                        [0;32m`._,._,'[0m
+[0;35m  nf-core/mag v2.5.0-gba72349[0m
+-[2m----------------------------------------------------[0m-
+[1mCore Nextflow options[0m
+  [0;34mrevision           : [0;32m2.5.0[0m
+  [0;34mrunName            : [0;32mzen_mayer[0m
+  [0;34mcontainerEngine    : [0;32msingularity[0m
+  [0;34mlaunchDir          : [0;32m/home/bio/projects/metagenomics/data_test[0m
+  [0;34mworkDir            : [0;32m/home/bio/projects/metagenomics/data_test/work[0m
+  [0;34mprojectDir         : [0;32m/home/bio/.nextflow/assets/nf-core/mag[0m
+  [0;34muserName           : [0;32mbio[0m
+  [0;34mprofile            : [0;32msingularity[0m
+  [0;34mconfigFiles        : [0;32m[0m
+
+[1mInput/output options[0m
+  [0;34minput              : [0;32msheet.csv[0m
+  [0;34moutdir             : [0;32mhey[0m
+
+[1mMax job request options[0m
+  [0;34mmax_memory         : [0;32m15.GB[0m
+
+[1mQuality control for short reads options[0m
+  [0;34mphix_reference     : [0;32m/home/bio/.nextflow/assets/nf-core/mag/assets/data/GCA_002596845.1_ASM259684v1_genomic.fna.gz[0m
+
+[1mQuality control for long reads options[0m
+  [0;34mlambda_reference   : [0;32m/home/bio/.nextflow/assets/nf-core/mag/assets/data/GCA_000840245.1_ViralProj14204_genomic.fna.gz[0m
+
+[1mTaxonomic profiling options[0m
+  [0;34mgtdbtk_min_perc_aa : [0;32m10[0m
+  [0;34mgtdbtk_pplacer_cpus: [0;32m1[0m
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+-[2m----------------------------------------------------[0m-
+If you use nf-core/mag for your analysis please cite:
+
+* The pipeline publication
+  https://doi.org/10.1093/nargab/lqac007
+
+* The pipeline
+  https://doi.org/10.5281/zenodo.3589527
+
+* The nf-core framework
+  https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+  https://github.com/nf-core/mag/blob/master/CITATIONS.md
+
+Nov-06 13:12:32.917 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_MAG:MAG:FASTQC_RAW
+Nov-06 13:12:32.923 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:FASTQC_RAW` matches process NFCORE_MAG:MAG:FASTQC_RAW
+Nov-06 13:12:32.943 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:32.943 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:32.959 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Nov-06 13:12:32.972 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=15.3 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Nov-06 13:12:32.978 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Nov-06 13:12:33.141 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_MAG:MAG:FASTP
+Nov-06 13:12:33.142 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:FASTP` matches process NFCORE_MAG:MAG:FASTP
+Nov-06 13:12:33.149 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.149 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.169 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.170 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.179 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:BOWTIE2_PHIX_REMOVAL_ALIGN` matches process NFCORE_MAG:MAG:BOWTIE2_PHIX_REMOVAL_ALIGN
+Nov-06 13:12:33.183 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.183 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.198 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_MAG:MAG:FASTQC_TRIMMED
+Nov-06 13:12:33.200 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:FASTQC_TRIMMED` matches process NFCORE_MAG:MAG:FASTQC_TRIMMED
+Nov-06 13:12:33.204 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.204 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.237 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_MAG:MAG:CAT_FASTQ
+Nov-06 13:12:33.242 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.242 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.263 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NANOPLOT_RAW` matches process NFCORE_MAG:MAG:NANOPLOT_RAW
+Nov-06 13:12:33.267 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.268 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.289 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:PORECHOP` matches process NFCORE_MAG:MAG:PORECHOP
+Nov-06 13:12:33.295 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.296 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.316 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NANOLYSE` matches process NFCORE_MAG:MAG:NANOLYSE
+Nov-06 13:12:33.321 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.321 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.357 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:FILTLONG` matches process NFCORE_MAG:MAG:FILTLONG
+Nov-06 13:12:33.361 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.362 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.373 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NANOPLOT_FILTERED` matches process NFCORE_MAG:MAG:NANOPLOT_FILTERED
+Nov-06 13:12:33.377 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.377 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.404 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CENTRIFUGE` matches process NFCORE_MAG:MAG:CENTRIFUGE
+Nov-06 13:12:33.408 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.409 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.424 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:KRAKEN2` matches process NFCORE_MAG:MAG:KRAKEN2
+Nov-06 13:12:33.428 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.428 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.453 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MEGAHIT` matches process NFCORE_MAG:MAG:MEGAHIT
+Nov-06 13:12:33.457 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.458 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.481 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.481 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.495 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SPADES` matches process NFCORE_MAG:MAG:SPADES
+Nov-06 13:12:33.499 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.500 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.549 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SPADESHYBRID` matches process NFCORE_MAG:MAG:SPADESHYBRID
+Nov-06 13:12:33.552 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.553 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.570 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:QUAST` matches process NFCORE_MAG:MAG:QUAST
+Nov-06 13:12:33.572 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.573 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.589 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_MAG:MAG:PRODIGAL
+Nov-06 13:12:33.590 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:PRODIGAL` matches process NFCORE_MAG:MAG:PRODIGAL
+Nov-06 13:12:33.593 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.594 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.613 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.613 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.630 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:BOWTIE2_ASSEMBLY_ALIGN` matches process NFCORE_MAG:MAG:BINNING_PREPARATION:BOWTIE2_ASSEMBLY_ALIGN
+Nov-06 13:12:33.632 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.632 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.647 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_MAG:MAG:BINNING:METABAT2_JGISUMMARIZEBAMCONTIGDEPTHS
+Nov-06 13:12:33.648 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:METABAT2_JGISUMMARIZEBAMCONTIGDEPTHS` matches process NFCORE_MAG:MAG:BINNING:METABAT2_JGISUMMARIZEBAMCONTIGDEPTHS
+Nov-06 13:12:33.650 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.650 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.665 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.665 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.677 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_MAG:MAG:BINNING:METABAT2_METABAT2
+Nov-06 13:12:33.677 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:METABAT2_METABAT2` matches process NFCORE_MAG:MAG:BINNING:METABAT2_METABAT2
+Nov-06 13:12:33.680 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.680 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.703 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_MAG:MAG:BINNING:MAXBIN2
+Nov-06 13:12:33.704 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MAXBIN2` matches process NFCORE_MAG:MAG:BINNING:MAXBIN2
+Nov-06 13:12:33.706 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.707 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.715 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_MAG:MAG:BINNING:ADJUST_MAXBIN2_EXT
+Nov-06 13:12:33.716 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:ADJUST_MAXBIN2_EXT` matches process NFCORE_MAG:MAG:BINNING:ADJUST_MAXBIN2_EXT
+Nov-06 13:12:33.718 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.718 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.738 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_CUTUPFASTA
+Nov-06 13:12:33.739 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CONCOCT_.*` matches process NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_CUTUPFASTA
+Nov-06 13:12:33.741 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.741 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.753 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_CONCOCTCOVERAGETABLE
+Nov-06 13:12:33.753 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CONCOCT_.*` matches process NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_CONCOCTCOVERAGETABLE
+Nov-06 13:12:33.755 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.755 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.766 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches labels `process_high` for process with name NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_CONCOCT
+Nov-06 13:12:33.767 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CONCOCT_.*` matches process NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_CONCOCT
+Nov-06 13:12:33.769 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.769 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.779 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_MERGECUTUPCLUSTERING
+Nov-06 13:12:33.780 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CONCOCT_.*` matches process NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_MERGECUTUPCLUSTERING
+Nov-06 13:12:33.782 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.782 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.793 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_EXTRACTFASTABINS
+Nov-06 13:12:33.794 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CONCOCT_.*` matches process NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_EXTRACTFASTABINS
+Nov-06 13:12:33.796 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.796 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.817 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_MAG:MAG:BINNING:SPLIT_FASTA
+Nov-06 13:12:33.818 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SPLIT_FASTA` matches process NFCORE_MAG:MAG:BINNING:SPLIT_FASTA
+Nov-06 13:12:33.820 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.820 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.831 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_MAG:MAG:BINNING:GUNZIP_BINS
+Nov-06 13:12:33.833 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.834 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.839 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_MAG:MAG:BINNING:GUNZIP_UNBINS
+Nov-06 13:12:33.842 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.842 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.873 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MAG_DEPTHS` matches process NFCORE_MAG:MAG:DEPTHS:MAG_DEPTHS
+Nov-06 13:12:33.875 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.876 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.916 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MAG_DEPTHS_PLOT|MAG_DEPTHS_SUMMARY` matches process NFCORE_MAG:MAG:DEPTHS:MAG_DEPTHS_PLOT
+Nov-06 13:12:33.920 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.920 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.933 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MAG_DEPTHS_PLOT|MAG_DEPTHS_SUMMARY` matches process NFCORE_MAG:MAG:DEPTHS:MAG_DEPTHS_SUMMARY
+Nov-06 13:12:33.936 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.936 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:33.982 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:BUSCO` matches process NFCORE_MAG:MAG:BUSCO_QC:BUSCO
+Nov-06 13:12:33.987 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:33.988 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:34.040 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:BUSCO_SUMMARY|QUAST_BINS|QUAST_BINS_SUMMARY` matches process NFCORE_MAG:MAG:BUSCO_QC:BUSCO_SUMMARY
+Nov-06 13:12:34.043 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:34.044 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:34.092 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:BUSCO_SUMMARY|QUAST_BINS|QUAST_BINS_SUMMARY` matches process NFCORE_MAG:MAG:QUAST_BINS
+Nov-06 13:12:34.096 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:34.097 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:34.114 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:BUSCO_SUMMARY|QUAST_BINS|QUAST_BINS_SUMMARY` matches process NFCORE_MAG:MAG:QUAST_BINS_SUMMARY
+Nov-06 13:12:34.117 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:34.118 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:34.129 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT` matches process NFCORE_MAG:MAG:CAT
+Nov-06 13:12:34.133 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:34.133 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:34.147 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_MAG:MAG:CAT_SUMMARY
+Nov-06 13:12:34.149 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_SUMMARY` matches process NFCORE_MAG:MAG:CAT_SUMMARY
+Nov-06 13:12:34.152 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:34.152 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:34.199 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:34.199 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:34.221 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_MAG:MAG:GTDBTK:GTDBTK_CLASSIFYWF
+Nov-06 13:12:34.222 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:GTDBTK_CLASSIFYWF` matches process NFCORE_MAG:MAG:GTDBTK:GTDBTK_CLASSIFYWF
+Nov-06 13:12:34.225 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:34.225 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:34.258 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:GTDBTK_SUMMARY` matches process NFCORE_MAG:MAG:GTDBTK:GTDBTK_SUMMARY
+Nov-06 13:12:34.261 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:34.261 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:34.283 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:BIN_SUMMARY` matches process NFCORE_MAG:MAG:BIN_SUMMARY
+Nov-06 13:12:34.285 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:34.285 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:34.311 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_MAG:MAG:PROKKA
+Nov-06 13:12:34.312 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:PROKKA` matches process NFCORE_MAG:MAG:PROKKA
+Nov-06 13:12:34.315 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:34.315 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:34.361 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_MAG:MAG:CUSTOM_DUMPSOFTWAREVERSIONS
+Nov-06 13:12:34.362 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CUSTOM_DUMPSOFTWAREVERSIONS` matches process NFCORE_MAG:MAG:CUSTOM_DUMPSOFTWAREVERSIONS
+Nov-06 13:12:34.365 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:34.365 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:34.503 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_MAG:MAG:MULTIQC
+Nov-06 13:12:34.504 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MULTIQC` matches process NFCORE_MAG:MAG:MULTIQC
+Nov-06 13:12:34.505 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-06 13:12:34.506 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-06 13:12:34.515 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: NANOPLOT_FILTERED, NFCORE_MAG:MAG:PROKKA, BUSCO, MMSEQS_DATABASES, NFCORE_MAG:MAG:NANOPLOT_RAW, CHECKM_LINEAGEWF, BOWTIE2_PHIX_REMOVAL_ALIGN, BUSCO_DB_PREPARATION, GUNZIP_ASSEMBLIES, CONCOCT_CONCOCTCOVERAGETABLE, POOL_SINGLE_READS, NFCORE_MAG:MAG:BUSCO_QC:BUSCO_SUMMARY, NFCORE_MAG:MAG:QUAST_BINS, BCFTOOLS_INDEX_POST, CENTRIFUGE_DB_PREPARATION, NFCORE_MAG:MAG:SPADESHYBRID, BCFTOOLS_CONSENSUS, POOL_SHORT_SINGLE_READS, PROKKA, GUNZIP_UNBINS, CAT_FASTQ, GUNZIP, BOWTIE2_ASSEMBLY_ALIGN, QUAST, QUAST_BINS_SUMMARY, NFCORE_MAG:MAG:DEPTHS:MAG_DEPTHS_PLOT, ADAPTERREMOVAL_SE, NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_CONCOCTCOVERAGETABLE, BUSCO_SAVE_DOWNLOAD, FILTLONG, BCFTOOLS_INDEX_PRE, DASTOOL_FASTATOCONTIG2BIN_METABAT2, KRAKEN2, ADJUST_MAXBIN2_EXT, KRONA_DB, NFCORE_MAG:MAG:FASTP, NFCORE_MAG:MAG:GTDBTK:GTDBTK_DB_PREPARATION, DASTOOL_FASTATOCONTIG2BIN_CONCOCT, NFCORE_MAG:MAG:CAT_SUMMARY, TIARA_TIARA, COMBINE_CHECKM_TSV, NFCORE_MAG:MAG:QUAST, PORECHOP, KRONA, NANOPLOT, NFCORE_MAG:MAG:BOWTIE2_PHIX_REMOVAL_BUILD, DASTOOL_FASTATOCONTIG2BIN_TIARA, NFCORE_MAG:MAG:BOWTIE2_PHIX_REMOVAL_ALIGN, NFCORE_MAG:MAG:BINNING_PREPARATION:BOWTIE2_ASSEMBLY_ALIGN, FASTQC, NFCORE_MAG:MAG:CUSTOM_DUMPSOFTWAREVERSIONS, CAT_DB_GENERATE, GTDBTK_SUMMARY, CONVERT_DEPTHS, MULTIQC, BCFTOOLS_INDEX, DASTOOL_FASTATOCONTIG2BIN_MAXBIN2, BIN_SUMMARY, MAXBIN2, BOWTIE2_REMOVAL_BUILD, NFCORE_MAG:MAG:SPADES, DASTOOL_FASTATOCONTIG2BIN, QUAST_BINS, CONCOCT_CUTUPFASTA, FREEBAYES, NANOPLOT_RAW, SAMTOOLS_FAIDX, NFCORE_MAG:MAG:CENTRIFUGE, NFCORE_MAG:MAG:PRODIGAL, PYDAMAGE_FILTER, CAT_SUMMARY, PRODIGAL, NFCORE_MAG:MAG:CAT, BCFTOOLS_VIEW, NFCORE_MAG:MAG:BUSCO_QC:BUSCO, RENAME_POSTDASTOOL, COMBINE_TSV, SPADESHYBRID, NFCORE_MAG:MAG:BINNING:METABAT2_JGISUMMARIZEBAMCONTIGDEPTHS, NFCORE_MAG:MAG:BINNING:MAXBIN2, NFCORE_MAG:MAG:QUAST_BINS_SUMMARY, NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_CONCOCT, MAG_DEPTHS_PLOT, NFCORE_MAG:MAG:NANOPLOT_FILTERED, ADAPTERREMOVAL, BOWTIE2_ASSEMBLY_BUILD, ADAPTERREMOVAL_PE, NFCORE_MAG:MAG:BINNING:GUNZIP_BINS, NFCORE_MAG:MAG:BINNING:SPLIT_FASTA, FASTP, BOWTIE2_HOST_REMOVAL_ALIGN, NFCORE_MAG:MAG:BINNING:METABAT2_METABAT2, GUNC_RUN, GENOMAD_DOWNLOAD, PYDAMAGE_ANALYZE, GUNC_DOWNLOADDB, DASTOOL_DASTOOL, FASTQC_TRIMMED, NFCORE_MAG:MAG:FASTQC_TRIMMED, NFCORE_MAG:MAG:CAT_FASTQ, COMBINE_SUMMARY_TSV, FASTQC_RAW, SPLIT_FASTA, CONCOCT_MERGECUTUPCLUSTERING, RENAME_PREDASTOOL, KRAKEN2_DB_PREPARATION, CENTRIFUGE, NFCORE_MAG:MAG:BINNING:CONVERT_DEPTHS, NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_CUTUPFASTA, POOL_PAIRED_READS, GTDBTK_CLASSIFYWF, BOWTIE2_REMOVAL_ALIGN, METABAT2_METABAT2, CONCOCT_CONCOCT, NFCORE_MAG:MAG:PORECHOP, NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_EXTRACTFASTABINS, NFCORE_MAG:MAG:BINNING_PREPARATION:BOWTIE2_ASSEMBLY_BUILD, GUNZIP_BINS, NFCORE_MAG:MAG:MEGAHIT, NFCORE_MAG:MAG:GTDBTK:GTDBTK_CLASSIFYWF, CAT_DB, CAT, NFCORE_MAG:MAG:DEPTHS:MAG_DEPTHS, NFCORE_MAG:MAG:BINNING:ADJUST_MAXBIN2_EXT, NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_MERGECUTUPCLUSTERING, MEGAHIT, NFCORE_MAG:MAG:BIN_SUMMARY, MAG_DEPTHS_SUMMARY, BOWTIE2_HOST_REMOVAL_BUILD, SPADES, MAG_DEPTHS, NFCORE_MAG:MAG:GTDBTK:GTDBTK_SUMMARY, CHECKM_QA, POOL_LONG_READS, NFCORE_MAG:MAG:DEPTHS:MAG_DEPTHS_SUMMARY, METAEUK_EASYPREDICT, NFCORE_MAG:MAG:KRAKEN2, SEQTK_MERGEPE, NFCORE_MAG:MAG:FILTLONG, TIARA_CLASSIFY, TIARA_SUMMARY, GTDBTK_DB_PREPARATION, BOWTIE2_PHIX_REMOVAL_BUILD, NFCORE_MAG:MAG:FASTQC_RAW, GUNC_MERGECHECKM, METABAT2_JGISUMMARIZEBAMCONTIGDEPTHS, NFCORE_MAG:MAG:BINNING:GUNZIP_UNBINS, NFCORE_MAG:MAG:NANOLYSE, NFCORE_MAG:MAG:MULTIQC, BUSCO_SUMMARY, BBMAP_BBNORM, ARIA2, NANOLYSE, GENOMAD_ENDTOEND, ARIA2_UNTAR, CUSTOM_DUMPSOFTWAREVERSIONS, CONCOCT_EXTRACTFASTABINS, FAIDX, NFCORE_MAG:MAG:POOL_LONG_READS
+Nov-06 13:12:34.536 [main] DEBUG nextflow.Session - Igniting dataflow network (88)
+Nov-06 13:12:34.545 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:FASTQC_RAW
+Nov-06 13:12:34.546 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:FASTP
+Nov-06 13:12:34.546 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:BOWTIE2_PHIX_REMOVAL_BUILD
+Nov-06 13:12:34.546 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:BOWTIE2_PHIX_REMOVAL_ALIGN
+Nov-06 13:12:34.546 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:FASTQC_TRIMMED
+Nov-06 13:12:34.547 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:CAT_FASTQ
+Nov-06 13:12:34.547 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:NANOPLOT_RAW
+Nov-06 13:12:34.547 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:PORECHOP
+Nov-06 13:12:34.547 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:NANOLYSE
+Nov-06 13:12:34.547 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:FILTLONG
+Nov-06 13:12:34.550 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:NANOPLOT_FILTERED
+Nov-06 13:12:34.550 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:CENTRIFUGE
+Nov-06 13:12:34.550 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:KRAKEN2
+Nov-06 13:12:34.550 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:MEGAHIT
+Nov-06 13:12:34.550 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:POOL_LONG_READS
+Nov-06 13:12:34.552 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:SPADES
+Nov-06 13:12:34.552 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:SPADESHYBRID
+Nov-06 13:12:34.552 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:QUAST
+Nov-06 13:12:34.552 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:PRODIGAL
+Nov-06 13:12:34.552 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:BINNING_PREPARATION:BOWTIE2_ASSEMBLY_BUILD
+Nov-06 13:12:34.552 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:BINNING_PREPARATION:BOWTIE2_ASSEMBLY_ALIGN
+Nov-06 13:12:34.552 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:BINNING:METABAT2_JGISUMMARIZEBAMCONTIGDEPTHS
+Nov-06 13:12:34.553 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:BINNING:CONVERT_DEPTHS
+Nov-06 13:12:34.553 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:BINNING:METABAT2_METABAT2
+Nov-06 13:12:34.554 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:BINNING:MAXBIN2
+Nov-06 13:12:34.554 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:BINNING:ADJUST_MAXBIN2_EXT
+Nov-06 13:12:34.554 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_CUTUPFASTA
+Nov-06 13:12:34.554 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_CONCOCTCOVERAGETABLE
+Nov-06 13:12:34.554 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_CONCOCT
+Nov-06 13:12:34.554 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_MERGECUTUPCLUSTERING
+Nov-06 13:12:34.554 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_EXTRACTFASTABINS
+Nov-06 13:12:34.555 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:BINNING:SPLIT_FASTA
+Nov-06 13:12:34.555 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:BINNING:GUNZIP_BINS
+Nov-06 13:12:34.555 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:BINNING:GUNZIP_UNBINS
+Nov-06 13:12:34.555 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:DEPTHS:MAG_DEPTHS
+Nov-06 13:12:34.555 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:DEPTHS:MAG_DEPTHS_PLOT
+Nov-06 13:12:34.555 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:DEPTHS:MAG_DEPTHS_SUMMARY
+Nov-06 13:12:34.555 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:BUSCO_QC:BUSCO
+Nov-06 13:12:34.555 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:BUSCO_QC:BUSCO_SUMMARY
+Nov-06 13:12:34.555 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:QUAST_BINS
+Nov-06 13:12:34.556 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:QUAST_BINS_SUMMARY
+Nov-06 13:12:34.556 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:CAT
+Nov-06 13:12:34.556 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:CAT_SUMMARY
+Nov-06 13:12:34.556 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:GTDBTK:GTDBTK_DB_PREPARATION
+Nov-06 13:12:34.556 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:GTDBTK:GTDBTK_CLASSIFYWF
+Nov-06 13:12:34.556 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:GTDBTK:GTDBTK_SUMMARY
+Nov-06 13:12:34.556 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:BIN_SUMMARY
+Nov-06 13:12:34.556 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:PROKKA
+Nov-06 13:12:34.557 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:CUSTOM_DUMPSOFTWAREVERSIONS
+Nov-06 13:12:34.558 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_MAG:MAG:MULTIQC
+Nov-06 13:12:34.561 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_875a03f510aacfcb: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/local/filtlong.nf
+  Script_b4b745b09ae96325: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/ancient_dna.nf
+  Script_6b4caf9050eeab8a: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/local/cat_db_generate.nf
+  Script_c667547abc052243: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/local/mag_depths.nf
+  Script_016e983f5ddff344: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/nf-core/metabat2/metabat2/main.nf
+  Script_dc47550ce4e9e0db: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/local/cat_summary.nf
+  Script_1f3a6476e7f372e1: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/local/quast.nf
+  Script_0da6736069339370: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/nf-core/fastqc/main.nf
+  Script_d476c3d317a2a5e0: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/local/busco_summary.nf
+  Script_68f98b3d189aab76: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../subworkflows/local/../../modules/nf-core/dastool/fastatocontig2bin/main.nf
+  Script_a93b0c18d5f7479d: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/local/busco_db_preparation.nf
+  Script_a203779e8c298bd7: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/virus_identification.nf
+  Script_4df4d183180ca4ae: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/local/quast_bins_summary.nf
+  Script_163ede1966c2f094: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/local/busco_save_download.nf
+  Script_cd6f3947962f62c4: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/nf-core/gunzip/main.nf
+  Script_0f437fd4163ac220: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../subworkflows/nf-core/fasta_binning_concoct/main.nf
+  Script_d99a70944199a143: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/checkm_qc.nf
+  Script_df78714e50ef8e4f: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/nf-core/bcftools/index/main.nf
+  Script_70dfc7aeea21a018: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/gunc_qc.nf
+  Script_8ebf027ffdc8cb49: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../subworkflows/nf-core/fasta_binning_concoct/../../../modules/nf-core/concoct/cutupfasta/main.nf
+  Script_4ea7ca13d633cce3: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/local/combine_tsv.nf
+  Script_eb9d0450a65129bd: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/nf-core/multiqc/main.nf
+  Script_8c8826aa8c70437a: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/nf-core/checkm/lineagewf/main.nf
+  Script_994414088505804d: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/local/megahit.nf
+  Script_efae011b2319edb3: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/local/convert_depths.nf
+  Script_75397748c1054a39: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/local/centrifuge_db_preparation.nf
+  Script_419d47eb5e311267: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/local/krona.nf
+  Script_6215646c3a1efc97: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/local/bowtie2_assembly_build.nf
+  Script_6b0e56849099ef30: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../subworkflows/nf-core/fasta_binning_concoct/../../../modules/nf-core/concoct/extractfastabins/main.nf
+  Script_ad958092d8a8d3af: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/nf-core/pydamage/analyze/main.nf
+  Script_552f827ad8b0090a: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/gtdbtk.nf
+  Script_7eb4c2d76527e3d3: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/nf-core/freebayes/main.nf
+  Script_35b0975aabfdce1c: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/local/bowtie2_removal_build.nf
+  Script_ee92193e093c17f9: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/nf-core/cat/fastq/main.nf
+  Script_68bd3c6a9734528f: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/binning_preparation.nf
+  Script_20f7b753877f67c5: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/nf-core/dastool/dastool/main.nf
+  Script_1d9f6862b56d90f9: /home/bio/.nextflow/assets/nf-core/mag/./workflows/mag.nf
+  Script_6f24bf347937ecd3: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/local/gtdbtk_summary.nf
+  Script_09147e8eac3f06f9: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/nf-core/custom/dumpsoftwareversions/main.nf
+  Script_755c7da8aa4032af: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/local/spades.nf
+  Script_a3594c77aaaa196b: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/local/bowtie2_assembly_align.nf
+  Script_6b1cdeba214836bb: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/local/pool_single_reads.nf
+  Script_0a34e8872584b045: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/local/nanoplot.nf
+  Script_752e81f21745f2d4: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/nf-core/metabat2/jgisummarizebamcontigdepths/main.nf
+  Script_443b239de528a61a: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/nf-core/prokka/main.nf
+  Script_ddda64982e34ddd7: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/local/spadeshybrid.nf
+  Script_9e57d32254434e79: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../subworkflows/local/../../modules/local/tiara_classify.nf
+  Script_e6671a08003e5a0f: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../subworkflows/nf-core/fasta_binning_concoct/../../../modules/nf-core/concoct/concoct/main.nf
+  Script_7ac82a8321ce7dc1: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/local/nanolyse.nf
+  Script_9c171fb3151b635f: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/local/kraken2_db_preparation.nf
+  Script_4f1ad9ad937bfac7: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../subworkflows/local/tiara.nf
+  Script_8e482ec66f7f1d38: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/local/pool_paired_reads.nf
+  Script_0cfd189d8a53aa85: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/local/centrifuge.nf
+  Script_c032f100d420b2bf: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/binning_refinement.nf
+  Script_d2b33fe6118ff6f0: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/nf-core/mmseqs/databases/main.nf
+  Script_e12ece3e7c204e4d: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/binning.nf
+  Script_b750997d6404af59: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/local/porechop.nf
+  Script_e05f7b559c23483d: /home/bio/.nextflow/assets/nf-core/mag/main.nf
+  Script_b6465a9ac3979379: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/nf-core/maxbin2/main.nf
+  Script_a1acef4f7f20fec6: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/nf-core/genomad/download/main.nf
+  Script_600b1c1b1bedfa8f: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/local/bin_summary.nf
+  Script_7d49d1b01fcfb006: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/local/quast_bins.nf
+  Script_50a0c6a623a0a1b3: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/nf-core/adapterremoval/main.nf
+  Script_c875cfe02a0e4f75: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/nf-core/checkm/qa/main.nf
+  Script_f736eac080edd11b: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/local/mag_depths_summary.nf
+  Script_95475d6ecd411051: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/local/bowtie2_removal_align.nf
+  Script_a7e8d1d55276fd46: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/nf-core/genomad/endtoend/main.nf
+  Script_704c91c8e3d5e91d: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/local/split_fasta.nf
+  Script_0e0a968bc27aec28: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/nf-core/pydamage/filter/main.nf
+  Script_58c762e0ca87b151: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/local/busco.nf
+  Script_c0aae0cf13f71d41: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/local/cat_db.nf
+  Script_3f145aa82e0f3f94: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/nf-core/gtdbtk/classifywf/main.nf
+  Script_3fb0163131c7e2da: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/local/krona_db.nf
+  Script_a24ca3b7b13e4e8f: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/local/cat.nf
+  Script_fa48d81f04ce76f9: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/busco_qc.nf
+  Script_266086b0dc7c34f5: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/nf-core/gunc/mergecheckm/main.nf
+  Script_db5ac7fe47bd88cb: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/local/rename_predastool.nf
+  Script_29c2e9457cdb0b77: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../subworkflows/nf-core/fasta_binning_concoct/../../../modules/nf-core/concoct/concoctcoveragetable/main.nf
+  Script_b74e1367aa00d541: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/local/mag_depths_plot.nf
+  Script_c0e46675f32e7b0b: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/nf-core/bcftools/view/main.nf
+  Script_a3fc4c34b50d1444: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/local/rename_postdastool.nf
+  Script_5b5d4c381b45446c: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/depths.nf
+  Script_1364948514bdc140: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/nf-core/gunc/run/main.nf
+  Script_9b2e59ef76c8b6e0: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/input_check.nf
+  Script_920151c958b5c36f: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/nf-core/bcftools/consensus/main.nf
+  Script_c49b487e7689d864: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/nf-core/metaeuk/easypredict/main.nf
+  Script_11adc95c1ea8090f: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/local/gtdbtk_db_preparation.nf
+  Script_0b622b9bea46b9ae: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../subworkflows/local/../../modules/nf-core/tiara/tiara/main.nf
+  Script_a8ca8e28e68f0279: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/nf-core/aria2/main.nf
+  Script_505aeb87e353f451: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/nf-core/gunc/downloaddb/main.nf
+  Script_cc67595ef8117468: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/local/adjust_maxbin2_ext.nf
+  Script_0927002c1c652597: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/nf-core/prodigal/main.nf
+  Script_2f23b18bae25021e: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../subworkflows/nf-core/fasta_binning_concoct/../../../modules/nf-core/concoct/mergecutupclustering/main.nf
+  Script_2950327a93ac9e4d: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/domain_classification.nf
+  Script_53d44e9e2e446e71: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/nf-core/seqtk/mergepe/main.nf
+  Script_b2f7950e97e20848: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/nf-core/bbmap/bbnorm/main.nf
+  Script_a0074cbcec26709f: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/local/kraken2.nf
+  Script_82c5624f5f63abe7: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../subworkflows/local/../../modules/nf-core/samtools/faidx/main.nf
+  Script_b16834c499741c31: /home/bio/.nextflow/assets/nf-core/mag/./workflows/../modules/nf-core/fastp/main.nf
+Nov-06 13:12:34.562 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Nov-06 13:12:34.562 [main] DEBUG nextflow.Session - Session await
+Nov-06 13:12:34.701 [Actor Thread 26] WARN  nextflow.container.SingularityCache - Singularity cache directory has not been defined -- Remote image will be stored in the path: /home/bio/projects/metagenomics/data_test/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+Nov-06 13:12:34.704 [Actor Thread 26] INFO  nextflow.container.SingularityCache - Pulling Singularity image https://depot.galaxyproject.org/singularity/fastqc:0.11.9--0 [cache /home/bio/projects/metagenomics/data_test/work/singularity/depot.galaxyproject.org-singularity-fastqc-0.11.9--0.img]
+Nov-06 13:12:34.704 [Actor Thread 18] INFO  nextflow.container.SingularityCache - Pulling Singularity image https://depot.galaxyproject.org/singularity/fastp:0.23.4--h5f740d0_0 [cache /home/bio/projects/metagenomics/data_test/work/singularity/depot.galaxyproject.org-singularity-fastp-0.23.4--h5f740d0_0.img]
+Nov-06 13:12:34.704 [Actor Thread 12] INFO  nextflow.container.SingularityCache - Pulling Singularity image https://depot.galaxyproject.org/singularity/bowtie2:2.4.2--py38h1c8e9b9_1 [cache /home/bio/projects/metagenomics/data_test/work/singularity/depot.galaxyproject.org-singularity-bowtie2-2.4.2--py38h1c8e9b9_1.img]
+Nov-06 13:12:34.751 [Actor Thread 6] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 1; slices: 1; internal sort time: 0.002 s; external sort time: 0.031 s; total time: 0.033 s
+Nov-06 13:12:34.751 [Actor Thread 13] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 1; slices: 1; internal sort time: 0.002 s; external sort time: 0.031 s; total time: 0.033 s
+Nov-06 13:12:34.760 [Actor Thread 13] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /home/bio/projects/metagenomics/data_test/work/collect-file/1b88372f15d4b14381f7b2b15396b999
+Nov-06 13:12:34.760 [Actor Thread 6] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /home/bio/projects/metagenomics/data_test/work/collect-file/ab5831f243543538aabdb1731cd7dfec
+Nov-06 13:12:34.777 [Actor Thread 6] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-16978121479543714606
+Nov-06 13:12:34.777 [Actor Thread 13] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-9115271310138855771
+Nov-06 13:12:36.080 [FileTransfer-1] DEBUG nextflow.file.FilePorter - Copying foreign file https://data.ace.uq.edu.au/public/gtdb/data/releases/release214/214.1/auxillary_files/gtdbtk_r214_data.tar.gz to work dir: /home/bio/projects/metagenomics/data_test/work/stage-3885c15f-29db-4806-8ba5-05ca086d72c6/d1/354d4b1aacdfa718098f8a2c2b523c/gtdbtk_r214_data.tar.gz
+Nov-06 13:12:38.080 [Actor Thread 27] INFO  nextflow.file.FilePorter - Staging foreign file: https://data.ace.uq.edu.au/public/gtdb/data/releases/release214/214.1/auxillary_files/gtdbtk_r214_data.tar.gz
+Nov-06 13:12:41.862 [Actor Thread 26] DEBUG nextflow.container.SingularityCache - Singularity pull complete image=https://depot.galaxyproject.org/singularity/fastqc:0.11.9--0 path=/home/bio/projects/metagenomics/data_test/work/singularity/depot.galaxyproject.org-singularity-fastqc-0.11.9--0.img
+Nov-06 13:12:42.015 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Nov-06 13:12:42.018 [Task submitter] INFO  nextflow.Session - [89/43f7c8] Submitted process > NFCORE_MAG:MAG:FASTQC_RAW (sample1_run0_raw)
+Nov-06 13:12:49.798 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: NFCORE_MAG:MAG:FASTQC_RAW (sample1_run0_raw); status: COMPLETED; exit: 0; error: -; workDir: /home/bio/projects/metagenomics/data_test/work/89/43f7c8a83ce3da94a9acfc0a1db2ab]
+Nov-06 13:12:49.858 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Nov-06 13:15:42.328 [Actor Thread 18] DEBUG nextflow.container.SingularityCache - Singularity pull complete image=https://depot.galaxyproject.org/singularity/fastp:0.23.4--h5f740d0_0 path=/home/bio/projects/metagenomics/data_test/work/singularity/depot.galaxyproject.org-singularity-fastp-0.23.4--h5f740d0_0.img
+Nov-06 13:15:42.354 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Nov-06 13:15:42.354 [Task submitter] INFO  nextflow.Session - [9f/43235e] Submitted process > NFCORE_MAG:MAG:FASTP (sample1_run0)
+Nov-06 13:15:46.315 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: NFCORE_MAG:MAG:FASTP (sample1_run0); status: COMPLETED; exit: 0; error: -; workDir: /home/bio/projects/metagenomics/data_test/work/9f/43235ecf40900867d0c877ef744d41]
+Nov-06 13:15:46.481 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_MAG:MAG:FASTP > Skipping output binding because one or more optional files are missing: fileoutparam<5:1>
+Nov-06 13:15:46.481 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_MAG:MAG:FASTP > Skipping output binding because one or more optional files are missing: fileoutparam<6:1>
+Nov-06 13:17:33.218 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > No more task to compute -- The following nodes are still active:
+[process] NFCORE_MAG:MAG:BOWTIE2_PHIX_REMOVAL_BUILD
+  status=ACTIVE
+  port 0: (value) bound ; channel: fasta
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BOWTIE2_PHIX_REMOVAL_ALIGN
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) OPEN  ; channel: index
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:FASTQC_TRIMMED
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:CAT_FASTQ
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:FILTLONG
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:NANOPLOT_FILTERED
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:MEGAHIT
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:POOL_LONG_READS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:SPADES
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:SPADESHYBRID
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:QUAST
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:PRODIGAL
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: output_format
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING_PREPARATION:BOWTIE2_ASSEMBLY_BUILD
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING_PREPARATION:BOWTIE2_ASSEMBLY_ALIGN
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:METABAT2_JGISUMMARIZEBAMCONTIGDEPTHS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:CONVERT_DEPTHS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:METABAT2_METABAT2
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:MAXBIN2
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:ADJUST_MAXBIN2_EXT
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_CUTUPFASTA
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: bed
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_CONCOCTCOVERAGETABLE
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_CONCOCT
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_MERGECUTUPCLUSTERING
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_EXTRACTFASTABINS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:SPLIT_FASTA
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:GUNZIP_BINS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:GUNZIP_UNBINS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:DEPTHS:MAG_DEPTHS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:DEPTHS:MAG_DEPTHS_PLOT
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) OPEN  ; channel: sample_groups
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:DEPTHS:MAG_DEPTHS_SUMMARY
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: mag_depths
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BUSCO_QC:BUSCO
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: -
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BUSCO_QC:BUSCO_SUMMARY
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: summaries_domain
+  port 1: (value) OPEN  ; channel: summaries_specific
+  port 2: (value) OPEN  ; channel: failed_bins
+  port 3: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:QUAST_BINS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:QUAST_BINS_SUMMARY
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: summaries
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:GTDBTK:GTDBTK_DB_PREPARATION
+  status=ACTIVE
+  port 0: (value) bound ; channel: database
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:GTDBTK:GTDBTK_CLASSIFYWF
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) OPEN  ; channel: -
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:GTDBTK:GTDBTK_SUMMARY
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: qc_discarded_bins
+  port 1: (value) OPEN  ; channel: gtdbtk_summaries
+  port 2: (value) OPEN  ; channel: filtered_bins
+  port 3: (value) OPEN  ; channel: failed_bins
+  port 4: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BIN_SUMMARY
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: bin_depths
+  port 1: (value) OPEN  ; channel: busco_sum
+  port 2: (queue) OPEN  ; channel: checkm_sum
+  port 3: (value) OPEN  ; channel: quast_sum
+  port 4: (value) OPEN  ; channel: gtdbtk_sum
+  port 5: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:PROKKA
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: proteins
+  port 2: (value) bound ; channel: prodigal_tf
+  port 3: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:CUSTOM_DUMPSOFTWAREVERSIONS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: versions
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:MULTIQC
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: multiqc_files
+  port 1: (value) bound ; channel: multiqc_config
+  port 2: (value) bound ; channel: extra_multiqc_config
+  port 3: (value) bound ; channel: multiqc_logo
+  port 4: (cntrl) -     ; channel: $
+
+Nov-06 13:22:33.263 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > No more task to compute -- The following nodes are still active:
+[process] NFCORE_MAG:MAG:BOWTIE2_PHIX_REMOVAL_BUILD
+  status=ACTIVE
+  port 0: (value) bound ; channel: fasta
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BOWTIE2_PHIX_REMOVAL_ALIGN
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) OPEN  ; channel: index
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:FASTQC_TRIMMED
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:CAT_FASTQ
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:FILTLONG
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:NANOPLOT_FILTERED
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:MEGAHIT
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:POOL_LONG_READS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:SPADES
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:SPADESHYBRID
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:QUAST
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:PRODIGAL
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: output_format
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING_PREPARATION:BOWTIE2_ASSEMBLY_BUILD
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING_PREPARATION:BOWTIE2_ASSEMBLY_ALIGN
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:METABAT2_JGISUMMARIZEBAMCONTIGDEPTHS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:CONVERT_DEPTHS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:METABAT2_METABAT2
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:MAXBIN2
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:ADJUST_MAXBIN2_EXT
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_CUTUPFASTA
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: bed
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_CONCOCTCOVERAGETABLE
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_CONCOCT
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_MERGECUTUPCLUSTERING
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_EXTRACTFASTABINS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:SPLIT_FASTA
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:GUNZIP_BINS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:GUNZIP_UNBINS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:DEPTHS:MAG_DEPTHS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:DEPTHS:MAG_DEPTHS_PLOT
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) OPEN  ; channel: sample_groups
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:DEPTHS:MAG_DEPTHS_SUMMARY
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: mag_depths
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BUSCO_QC:BUSCO
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: -
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BUSCO_QC:BUSCO_SUMMARY
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: summaries_domain
+  port 1: (value) OPEN  ; channel: summaries_specific
+  port 2: (value) OPEN  ; channel: failed_bins
+  port 3: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:QUAST_BINS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:QUAST_BINS_SUMMARY
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: summaries
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:GTDBTK:GTDBTK_DB_PREPARATION
+  status=ACTIVE
+  port 0: (value) bound ; channel: database
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:GTDBTK:GTDBTK_CLASSIFYWF
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) OPEN  ; channel: -
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:GTDBTK:GTDBTK_SUMMARY
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: qc_discarded_bins
+  port 1: (value) OPEN  ; channel: gtdbtk_summaries
+  port 2: (value) OPEN  ; channel: filtered_bins
+  port 3: (value) OPEN  ; channel: failed_bins
+  port 4: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BIN_SUMMARY
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: bin_depths
+  port 1: (value) OPEN  ; channel: busco_sum
+  port 2: (queue) OPEN  ; channel: checkm_sum
+  port 3: (value) OPEN  ; channel: quast_sum
+  port 4: (value) OPEN  ; channel: gtdbtk_sum
+  port 5: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:PROKKA
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: proteins
+  port 2: (value) bound ; channel: prodigal_tf
+  port 3: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:CUSTOM_DUMPSOFTWAREVERSIONS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: versions
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:MULTIQC
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: multiqc_files
+  port 1: (value) bound ; channel: multiqc_config
+  port 2: (value) bound ; channel: extra_multiqc_config
+  port 3: (value) bound ; channel: multiqc_logo
+  port 4: (cntrl) -     ; channel: $
+
+Nov-06 13:22:41.466 [Actor Thread 12] DEBUG nextflow.container.SingularityCache - Singularity pull complete image=https://depot.galaxyproject.org/singularity/bowtie2:2.4.2--py38h1c8e9b9_1 path=/home/bio/projects/metagenomics/data_test/work/singularity/depot.galaxyproject.org-singularity-bowtie2-2.4.2--py38h1c8e9b9_1.img
+Nov-06 13:22:41.476 [Actor Thread 19] DEBUG nextflow.util.CacheHelper - Hash asset file sha-256: /home/bio/.nextflow/assets/nf-core/mag/assets/data/GCA_002596845.1_ASM259684v1_genomic.fna.gz
+Nov-06 13:22:41.490 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Nov-06 13:22:41.491 [Task submitter] INFO  nextflow.Session - [99/c381b9] Submitted process > NFCORE_MAG:MAG:BOWTIE2_PHIX_REMOVAL_BUILD (GCA_002596845.1_ASM259684v1_genomic.fna.gz)
+Nov-06 13:22:43.785 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: NFCORE_MAG:MAG:BOWTIE2_PHIX_REMOVAL_BUILD (GCA_002596845.1_ASM259684v1_genomic.fna.gz); status: COMPLETED; exit: 0; error: -; workDir: /home/bio/projects/metagenomics/data_test/work/99/c381b98433348b916c5270301e3997]
+Nov-06 13:22:43.815 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Nov-06 13:22:43.815 [Task submitter] INFO  nextflow.Session - [14/df2aa0] Submitted process > NFCORE_MAG:MAG:BOWTIE2_PHIX_REMOVAL_ALIGN (sample1_run0)
+Nov-06 13:22:54.851 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: NFCORE_MAG:MAG:BOWTIE2_PHIX_REMOVAL_ALIGN (sample1_run0); status: COMPLETED; exit: 0; error: -; workDir: /home/bio/projects/metagenomics/data_test/work/14/df2aa081a4a5dc2c575dddaaa7f5f6]
+Nov-06 13:22:54.861 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_MAG:MAG:BOWTIE2_PHIX_REMOVAL_ALIGN > Skipping output binding because one or more optional files are missing: fileoutparam<1>
+Nov-06 13:22:54.886 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Nov-06 13:22:54.887 [Task submitter] INFO  nextflow.Session - [d3/ccd786] Submitted process > NFCORE_MAG:MAG:FASTQC_TRIMMED (sample1_run0)
+Nov-06 13:22:54.891 [Actor Thread 12] WARN  nextflow.container.SingularityCache - Singularity cache directory has not been defined -- Remote image will be stored in the path: /home/bio/projects/metagenomics/data_test/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+Nov-06 13:22:54.891 [Actor Thread 12] INFO  nextflow.container.SingularityCache - Pulling Singularity image https://depot.galaxyproject.org/singularity/spades:3.15.3--h95f258a_0 [cache /home/bio/projects/metagenomics/data_test/work/singularity/depot.galaxyproject.org-singularity-spades-3.15.3--h95f258a_0.img]
+Nov-06 13:22:54.895 [Actor Thread 30] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 1; slices: 1; internal sort time: 0.0 s; external sort time: 0.001 s; total time: 0.001 s
+Nov-06 13:22:54.898 [Actor Thread 30] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /home/bio/projects/metagenomics/data_test/work/collect-file/4e040459f243adc884f649876c1dd9ad
+Nov-06 13:22:54.900 [Actor Thread 30] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-6963036044097190151
+Nov-06 13:22:54.910 [Actor Thread 30] INFO  nextflow.container.SingularityCache - Pulling Singularity image https://depot.galaxyproject.org/singularity/megahit:1.2.9--h2e03b76_1 [cache /home/bio/projects/metagenomics/data_test/work/singularity/depot.galaxyproject.org-singularity-megahit-1.2.9--h2e03b76_1.img]
+Nov-06 13:23:01.439 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: NFCORE_MAG:MAG:FASTQC_TRIMMED (sample1_run0); status: COMPLETED; exit: 0; error: -; workDir: /home/bio/projects/metagenomics/data_test/work/d3/ccd7862efdab3e0c9e8270018a442d]
+Nov-06 13:26:29.130 [SIGHUP handler] DEBUG nextflow.Session - Session aborted -- Cause: SIGHUP
+Nov-06 13:26:29.139 [Actor Thread 8] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_MAG:MAG:SPADES (1); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to pull singularity image
+  command: singularity pull  --name depot.galaxyproject.org-singularity-spades-3.15.3--h95f258a_0.img.pulling.1699258974891 https://depot.galaxyproject.org/singularity/spades:3.15.3--h95f258a_0 > /dev/null
+  status : 143
+  message:
+    INFO:    Downloading network image
+
+Nov-06 13:26:29.143 [Actor Thread 32] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_MAG:MAG:MEGAHIT (1); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to pull singularity image
+  command: singularity pull  --name depot.galaxyproject.org-singularity-megahit-1.2.9--h2e03b76_1.img.pulling.1699258974910 https://depot.galaxyproject.org/singularity/megahit:1.2.9--h2e03b76_1 > /dev/null
+  status : 143
+  message:
+    INFO:    Downloading network image
+
+Nov-06 13:26:29.152 [Actor Thread 19] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_MAG:MAG:MEGAHIT; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Nov-06 13:26:29.154 [Actor Thread 31] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_MAG:MAG:SPADES; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Nov-06 13:26:29.161 [SIGHUP handler] DEBUG nextflow.Session - The following nodes are still active:
+[process] NFCORE_MAG:MAG:MEGAHIT
+
+[process] NFCORE_MAG:MAG:SPADES
+
+[process] NFCORE_MAG:MAG:QUAST
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:PRODIGAL
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: output_format
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING_PREPARATION:BOWTIE2_ASSEMBLY_BUILD
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING_PREPARATION:BOWTIE2_ASSEMBLY_ALIGN
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:METABAT2_JGISUMMARIZEBAMCONTIGDEPTHS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:CONVERT_DEPTHS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:METABAT2_METABAT2
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:MAXBIN2
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:ADJUST_MAXBIN2_EXT
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_CUTUPFASTA
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: bed
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_CONCOCTCOVERAGETABLE
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_CONCOCT
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_MERGECUTUPCLUSTERING
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:FASTA_BINNING_CONCOCT:CONCOCT_EXTRACTFASTABINS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:SPLIT_FASTA
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:GUNZIP_BINS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BINNING:GUNZIP_UNBINS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:DEPTHS:MAG_DEPTHS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:DEPTHS:MAG_DEPTHS_PLOT
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: sample_groups
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:DEPTHS:MAG_DEPTHS_SUMMARY
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: mag_depths
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BUSCO_QC:BUSCO
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: -
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BUSCO_QC:BUSCO_SUMMARY
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: summaries_domain
+  port 1: (value) OPEN  ; channel: summaries_specific
+  port 2: (value) OPEN  ; channel: failed_bins
+  port 3: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:QUAST_BINS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:QUAST_BINS_SUMMARY
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: summaries
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:GTDBTK:GTDBTK_DB_PREPARATION
+  status=ACTIVE
+  port 0: (value) bound ; channel: database
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:GTDBTK:GTDBTK_CLASSIFYWF
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) OPEN  ; channel: -
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:GTDBTK:GTDBTK_SUMMARY
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: qc_discarded_bins
+  port 1: (value) OPEN  ; channel: gtdbtk_summaries
+  port 2: (value) OPEN  ; channel: filtered_bins
+  port 3: (value) OPEN  ; channel: failed_bins
+  port 4: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:BIN_SUMMARY
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: bin_depths
+  port 1: (value) OPEN  ; channel: busco_sum
+  port 2: (queue) OPEN  ; channel: checkm_sum
+  port 3: (value) OPEN  ; channel: quast_sum
+  port 4: (value) OPEN  ; channel: gtdbtk_sum
+  port 5: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:PROKKA
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: proteins
+  port 2: (value) bound ; channel: prodigal_tf
+  port 3: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:CUSTOM_DUMPSOFTWAREVERSIONS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: versions
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_MAG:MAG:MULTIQC
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: multiqc_files
+  port 1: (value) bound ; channel: multiqc_config
+  port 2: (value) bound ; channel: extra_multiqc_config
+  port 3: (value) bound ; channel: multiqc_logo
+  port 4: (cntrl) -     ; channel: $
+
+Nov-06 13:26:29.166 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Nov-06 13:26:29.167 [main] DEBUG nextflow.Session - Session await > all processes finished
+Nov-06 13:26:29.167 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Nov-06 13:26:29.234 [Actor Thread 19] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_MAG:MAG:BINNING:METABAT2_JGISUMMARIZEBAMCONTIGDEPTHS; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Nov-06 13:26:29.244 [Actor Thread 32] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_MAG:MAG:BINNING:CONVERT_DEPTHS; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Nov-06 13:26:29.302 [Actor Thread 42] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_MAG:MAG:BINNING:SPLIT_FASTA; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Nov-06 13:26:29.380 [Actor Thread 45] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_MAG:MAG:BUSCO_QC:BUSCO_SUMMARY; work-dir=null
+  error [java.lang.IllegalStateException]: Cannot obtain the semaphore to fork operator's body.
+Nov-06 13:26:29.380 [Actor Thread 3] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_MAG:MAG:GTDBTK:GTDBTK_DB_PREPARATION; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Nov-06 13:26:29.386 [Actor Thread 36] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_MAG:MAG:MULTIQC; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Nov-06 13:26:29.390 [Actor Thread 7] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 4; slices: 1; internal sort time: 0.008 s; external sort time: 0.001 s; total time: 0.009 s
+Nov-06 13:26:29.395 [Actor Thread 7] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /home/bio/projects/metagenomics/data_test/work/collect-file/2e0eb0e3eca0cc078de09bfc510ac1d6
+Nov-06 13:26:29.399 [Actor Thread 51] WARN  nextflow.container.SingularityCache - Singularity cache directory has not been defined -- Remote image will be stored in the path: /home/bio/projects/metagenomics/data_test/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+Nov-06 13:26:29.404 [Actor Thread 7] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-15253032667182507129
+Nov-06 13:26:29.408 [main] INFO  nextflow.Nextflow - -[0;35m[nf-core/mag][0;31m Pipeline completed with errors[0m-
+Nov-06 13:26:29.553 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=5; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=2m 7s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=6; peakMemory=15 GB; ]
+Nov-06 13:26:29.551 [Actor Thread 51] INFO  nextflow.container.SingularityCache - Pulling Singularity image https://depot.galaxyproject.org/singularity/multiqc:1.15--pyhdfd78af_0 [cache /home/bio/projects/metagenomics/data_test/work/singularity/depot.galaxyproject.org-singularity-multiqc-1.15--pyhdfd78af_0.img]
+Nov-06 13:26:29.554 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+Nov-06 13:26:29.567 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Nov-06 13:26:30.954 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+Nov-06 13:26:31.241 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Nov-06 13:26:31.241 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-validation@1.1.1'
+Nov-06 13:26:31.241 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-validation
+Nov-06 13:26:31.292 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

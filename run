@@ -1,0 +1,3 @@
+# nextflow run nf-core/mag -r 2.5.0 -profile docker --input sheet.csv --outdir hey -Xmx4g
+
+nextflow run nf-core/mag -r 2.5.0 -profile singularity --input sheet.csv --outdir hey
