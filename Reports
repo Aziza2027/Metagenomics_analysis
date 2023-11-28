@@ -1,0 +1,238 @@
+  3.49	873	873	U	0	unclassified
+ 96.51	24120	66	R	1	root
+ 96.24	24053	0	R1	131567	  cellular organisms
+ 95.17	23785	7	D	2	    Bacteria
+ 74.72	18674	13	P	1224	      Proteobacteria
+ 71.18	17791	74	C	1236	        Gammaproteobacteria
+ 68.90	17219	0	O	72274	          Pseudomonadales
+ 64.18	16041	0	F	468	            Moraxellaceae
+ 64.18	16041	187	G	469	              Acinetobacter
+ 63.43	15854	2833	G1	909768	                Acinetobacter calcoaceticus/baumannii complex
+ 51.83	12953	12888	S	470	                  Acinetobacter baumannii
+  0.06	16	16	S1	1400867	                    Acinetobacter baumannii ZW85-1
+  0.05	12	12	S1	1370126	                    Acinetobacter baumannii DU202
+  0.04	11	11	S1	497978	                    Acinetobacter baumannii MDR-ZJ06
+  0.04	10	10	S1	405416	                    Acinetobacter baumannii ACICU
+  0.04	10	10	S1	696749	                    Acinetobacter baumannii 1656-2
+  0.01	3	3	S1	509173	                    Acinetobacter baumannii AYE
+  0.00	1	1	S1	480119	                    Acinetobacter baumannii AB0057
+  0.00	1	1	S1	1455315	                    Acinetobacter baumannii LAC-4
+  0.00	1	1	S1	945556	                    Acinetobacter baumannii D1279779
+  0.12	31	26	S	48296	                  Acinetobacter pittii
+  0.02	5	5	S1	871585	                    Acinetobacter pittii PHEA-2
+  0.10	24	24	S	106654	                  Acinetobacter nosocomialis
+  0.03	8	8	S	471	                  Acinetobacter calcoaceticus
+  0.02	5	5	S	1785128	                  Acinetobacter lactucae
+  4.71	1178	0	F	135621	            Pseudomonadaceae
+  4.71	1178	2	G	286	              Pseudomonas
+  4.71	1176	0	G1	136841	                Pseudomonas aeruginosa group
+  4.71	1176	1171	S	287	                  Pseudomonas aeruginosa
+  0.00	1	0	S1	208964	                    Pseudomonas aeruginosa PAO1
+  0.00	1	1	S2	1147787	                      Pseudomonas aeruginosa PAO1H2O
+  0.00	1	1	S1	1427342	                    Pseudomonas aeruginosa SCV20265
+  0.00	1	1	S1	798130	                    Pseudomonas aeruginosa 39016
+  0.00	1	1	S1	1400868	                    Pseudomonas aeruginosa VRFPA04
+  0.00	1	1	S1	1009714	                    Pseudomonas aeruginosa PAK
+  1.99	498	7	O	91347	          Enterobacterales
+  1.96	491	297	F	543	            Enterobacteriaceae
+  0.76	190	12	G	561	              Escherichia
+  0.71	177	177	S	562	                Escherichia coli
+  0.00	1	1	S	208962	                Escherichia albertii
+  0.01	2	0	G	590	              Salmonella
+  0.01	2	1	S	28901	                Salmonella enterica
+  0.00	1	0	S1	59202	                  Salmonella enterica subsp. salamae
+  0.00	1	1	S2	297361	                    Salmonella enterica subsp. salamae serovar Greenside
+  0.00	1	1	G	570	              Klebsiella
+  0.00	1	0	G	620	              Shigella
+  0.00	1	0	S	622	                Shigella dysenteriae
+  0.00	1	1	S1	300267	                  Shigella dysenteriae Sd197
+  1.84	461	0	P1	68525	        delta/epsilon subdivisions
+  1.84	461	0	C	29547	          Epsilonproteobacteria
+  1.84	461	0	O	213849	            Campylobacterales
+  1.84	461	0	F	72293	              Helicobacteraceae
+  1.84	461	0	G	209	                Helicobacter
+  1.84	461	439	S	210	                  Helicobacter pylori
+  0.01	3	3	S1	907239	                    Helicobacter pylori SouthAfrica7
+  0.01	3	3	S1	85962	                    Helicobacter pylori 26695
+  0.01	2	2	S1	1321939	                    Helicobacter pylori UM037
+  0.00	1	1	S1	585538	                    Helicobacter pylori 83
+  0.00	1	0	S1	869727	                    Helicobacter pylori 908
+  0.00	1	1	S2	985080	                      Helicobacter pylori 2018
+  0.00	1	1	S1	907238	                    Helicobacter pylori India7
+  0.00	1	1	S1	765963	                    Helicobacter pylori PeCan4
+  0.00	1	1	S1	907240	                    Helicobacter pylori Gambia94/24
+  0.00	1	1	S1	1382922	                    Helicobacter pylori oki128
+  0.00	1	1	S1	1055527	                    Helicobacter pylori ELS37
+  0.00	1	1	S1	1248726	                    Helicobacter pylori OK310
+  0.00	1	1	S1	1055530	                    Helicobacter pylori SNT49
+  0.00	1	1	S1	570508	                    Helicobacter pylori P12
+  0.00	1	1	S1	563041	                    Helicobacter pylori G27
+  0.00	1	1	S1	357544	                    Helicobacter pylori HPAG1
+  0.00	1	1	S1	290847	                    Helicobacter pylori 51
+  0.00	1	1	S1	1426844	                    Helicobacter pylori NY40
+  0.95	237	0	C	28211	        Alphaproteobacteria
+  0.95	237	0	O	204455	          Rhodobacterales
+  0.95	237	0	F	31989	            Rhodobacteraceae
+  0.95	237	1	G	1060	              Rhodobacter
+  0.94	236	220	S	1063	                Rhodobacter sphaeroides
+  0.02	6	6	S1	557760	                  Rhodobacter sphaeroides KD131
+  0.02	5	5	S1	992186	                  Rhodobacter sphaeroides WS8N
+  0.01	3	3	S1	349101	                  Rhodobacter sphaeroides ATCC 17029
+  0.00	1	1	S1	272943	                  Rhodobacter sphaeroides 2.4.1
+  0.00	1	1	S1	349102	                  Rhodobacter sphaeroides ATCC 17025
+  0.69	172	0	C	28216	        Betaproteobacteria
+  0.69	172	0	O	206351	          Neisseriales
+  0.69	172	0	F	481	            Neisseriaceae
+  0.69	172	18	G	482	              Neisseria
+  0.61	153	152	S	487	                Neisseria meningitidis
+  0.00	1	0	S1	491	                  Neisseria meningitidis serogroup B
+  0.00	1	1	S2	630588	                    Neisseria meningitidis alpha710
+  0.00	1	1	S	486	                Neisseria lactamica
+ 17.84	4459	0	D1	1783272	      Terrabacteria group
+ 16.51	4127	1	P	1239	        Firmicutes
+ 14.92	3728	2	C	91061	          Bacilli
+ 11.32	2828	2	O	1385	            Bacillales
+  7.36	1840	0	F	90964	              Staphylococcaceae
+  7.36	1840	40	G	1279	                Staphylococcus
+  3.74	934	880	S	1282	                  Staphylococcus epidermidis
+  0.21	52	52	S1	176280	                    Staphylococcus epidermidis ATCC 12228
+  0.00	1	1	S1	176279	                    Staphylococcus epidermidis RP62A
+  0.00	1	1	S1	1449752	                    Staphylococcus epidermidis PM221
+  3.46	866	853	S	1280	                  Staphylococcus aureus
+  0.05	13	4	S1	46170	                    Staphylococcus aureus subsp. aureus
+  0.01	2	2	S2	985006	                      Staphylococcus aureus subsp. aureus LGA251
+  0.00	1	1	S2	1392476	                      Staphylococcus aureus subsp. aureus 6850
+  0.00	1	1	S2	1381115	                      Staphylococcus aureus subsp. aureus Tager 104
+  0.00	1	1	S2	93061	                      Staphylococcus aureus subsp. aureus NCTC 8325
+  0.00	1	1	S2	548473	                      Staphylococcus aureus subsp. aureus TCH60
+  0.00	1	1	S2	546342	                      Staphylococcus aureus subsp. aureus str. JKD6008
+  0.00	1	1	S2	1118959	                      Staphylococcus aureus subsp. aureus M013
+  0.00	1	1	S2	1074919	                      Staphylococcus aureus subsp. aureus ST228
+  3.20	801	0	F	186820	              Listeriaceae
+  3.20	801	14	G	1637	                Listeria
+  3.15	787	772	S	1639	                  Listeria monocytogenes
+  0.05	12	12	S1	169963	                    Listeria monocytogenes EGD-e
+  0.00	1	1	S1	863767	                    Listeria monocytogenes serotype 7 str. SLCC2482
+  0.00	1	1	S1	930781	                    Listeria monocytogenes J1816
+  0.00	1	1	S1	932920	                    Listeria monocytogenes SLCC2372
+  0.74	185	0	F	186817	              Bacillaceae
+  0.74	185	0	G	1386	                Bacillus
+  0.74	185	125	G1	86661	                  Bacillus cereus group
+  0.22	55	46	S	1396	                    Bacillus cereus
+  0.02	5	5	S1	226900	                      Bacillus cereus ATCC 14579
+  0.01	2	2	S1	526982	                      Bacillus cereus Rock1-15
+  0.00	1	1	S1	526992	                      Bacillus cereus AH1271
+  0.00	1	1	S1	526974	                      Bacillus cereus BDRD-ST24
+  0.02	4	0	S	1428	                    Bacillus thuringiensis
+  0.01	2	0	S1	180869	                      Bacillus thuringiensis serovar pakistani
+  0.01	2	2	S2	527027	                        Bacillus thuringiensis serovar pakistani str. T13001
+  0.00	1	1	S1	1218175	                      Bacillus thuringiensis HD-771
+  0.00	1	0	S1	29339	                      Bacillus thuringiensis serovar kurstaki
+  0.00	1	1	S2	570416	                        Bacillus thuringiensis serovar kurstaki str. YBT-1520
+  0.00	1	1	S	1890302	                    Bacillus wiedmannii
+  3.59	898	0	O	186826	            Lactobacillales
+  2.61	653	0	F	1300	              Streptococcaceae
+  2.61	653	53	G	1301	                Streptococcus
+  1.87	468	465	S	1309	                  Streptococcus mutans
+  0.00	1	1	S1	210007	                    Streptococcus mutans UA159
+  0.00	1	1	S1	511691	                    Streptococcus mutans NN2025
+  0.00	1	1	S1	1198676	                    Streptococcus mutans GS-5
+  0.26	66	65	S	1311	                  Streptococcus agalactiae
+  0.00	1	0	S1	216466	                    Streptococcus agalactiae serogroup V
+  0.00	1	1	S2	208435	                      Streptococcus agalactiae 2603V/R
+  0.26	65	64	S	1313	                  Streptococcus pneumoniae
+  0.00	1	1	S1	488222	                    Streptococcus pneumoniae JJA
+  0.00	1	0	G1	119603	                  Streptococcus dysgalactiae group
+  0.00	1	0	S	1334	                    Streptococcus dysgalactiae
+  0.00	1	1	S1	119602	                      Streptococcus dysgalactiae subsp. equisimilis
+  0.88	221	0	F	81852	              Enterococcaceae
+  0.88	221	3	G	1350	                Enterococcus
+  0.87	218	185	S	1351	                  Enterococcus faecalis
+  0.12	31	31	S1	226185	                    Enterococcus faecalis V583
+  0.00	1	1	S1	565651	                    Enterococcus faecalis ARO1/DG
+  0.00	1	1	S1	1261557	                    Enterococcus faecalis str. Symbioflor 1
+  0.09	23	0	F	33958	              Lactobacillaceae
+  0.09	23	1	G	1578	                Lactobacillus
+  0.09	22	4	S	1596	                  Lactobacillus gasseri
+  0.07	18	18	S1	324831	                    Lactobacillus gasseri ATCC 33323 = JCM 1131
+  0.00	1	0	F	186828	              Carnobacteriaceae
+  0.00	1	0	G	1470540	                Jeotgalibaca
+  0.00	1	1	S	1903686	                  Jeotgalibaca sp. PTS2502
+  1.59	398	0	C	186801	          Clostridia
+  1.59	398	0	O	186802	            Clostridiales
+  1.59	398	0	F	31979	              Clostridiaceae
+  1.59	398	44	G	1485	                Clostridium
+  1.40	351	345	S	1520	                  Clostridium beijerinckii
+  0.01	3	3	S1	290402	                    Clostridium beijerinckii NCIMB 8052
+  0.01	3	3	S1	1428454	                    Clostridium beijerinckii NRRL B-598
+  0.00	1	1	S	1491	                  Clostridium botulinum
+  0.00	1	1	S	1702238	                  Clostridium sp. MF28
+  0.00	1	1	S	169679	                  Clostridium saccharobutylicum
+  0.70	176	0	P	1297	        Deinococcus-Thermus
+  0.70	176	0	C	188787	          Deinococci
+  0.70	176	0	O	118964	            Deinococcales
+  0.70	176	0	F	183710	              Deinococcaceae
+  0.70	176	0	G	1298	                Deinococcus
+  0.70	176	0	S	1299	                  Deinococcus radiodurans
+  0.70	176	176	S1	243230	                    Deinococcus radiodurans R1
+  0.62	156	0	P	201174	        Actinobacteria
+  0.62	156	0	C	1760	          Actinobacteria
+  0.62	156	0	O	85009	            Propionibacteriales
+  0.62	156	0	F	31957	              Propionibacteriaceae
+  0.62	156	0	G	1912216	                Cutibacterium
+  0.62	156	154	S	1747	                  Cutibacterium acnes
+  0.01	2	2	S1	267747	                    Cutibacterium acnes KPA171202
+  2.58	645	0	D1	1783270	      FCB group
+  2.58	645	0	D2	68336	        Bacteroidetes/Chlorobi group
+  2.58	645	0	P	976	          Bacteroidetes
+  2.58	645	0	C	200643	            Bacteroidia
+  2.58	645	1	O	171549	              Bacteroidales
+  2.58	644	0	F	815	                Bacteroidaceae
+  2.58	644	23	G	816	                  Bacteroides
+  2.48	621	259	S	821	                    Bacteroides vulgatus
+  1.45	362	362	S1	435590	                      Bacteroides vulgatus ATCC 8482
+  1.06	265	0	D	2157	    Archaea
+  1.06	265	0	P	28890	      Euryarchaeota
+  1.06	265	0	P1	2283794	        Methanomada group
+  1.06	265	0	C	183925	          Methanobacteria
+  1.06	265	0	O	2158	            Methanobacteriales
+  1.06	265	0	F	2159	              Methanobacteriaceae
+  1.06	265	0	G	2172	                Methanobrevibacter
+  1.06	265	67	S	2173	                  Methanobrevibacter smithii
+  0.79	198	198	S1	420247	                    Methanobrevibacter smithii ATCC 35061
+  0.01	3	0	D	2759	    Eukaryota
+  0.01	3	0	D1	33154	      Opisthokonta
+  0.01	3	0	K	33208	        Metazoa
+  0.01	3	0	K1	6072	          Eumetazoa
+  0.01	3	0	K2	33213	            Bilateria
+  0.01	3	0	K3	33511	              Deuterostomia
+  0.01	3	0	P	7711	                Chordata
+  0.01	3	0	P1	89593	                  Craniata
+  0.01	3	0	P2	7742	                    Vertebrata
+  0.01	3	0	P3	7776	                      Gnathostomata
+  0.01	3	0	P4	117570	                        Teleostomi
+  0.01	3	0	P5	117571	                          Euteleostomi
+  0.01	3	0	P6	8287	                            Sarcopterygii
+  0.01	3	0	P7	1338369	                              Dipnotetrapodomorpha
+  0.01	3	0	P8	32523	                                Tetrapoda
+  0.01	3	0	P9	32524	                                  Amniota
+  0.01	3	0	C	40674	                                    Mammalia
+  0.01	3	0	C1	32525	                                      Theria
+  0.01	3	0	C2	9347	                                        Eutheria
+  0.01	3	0	C3	1437010	                                          Boreoeutheria
+  0.01	3	0	C4	314146	                                            Euarchontoglires
+  0.01	3	0	O	9443	                                              Primates
+  0.01	3	0	O1	376913	                                                Haplorrhini
+  0.01	3	0	O2	314293	                                                  Simiiformes
+  0.01	3	0	O3	9526	                                                    Catarrhini
+  0.01	3	0	O4	314295	                                                      Hominoidea
+  0.01	3	0	F	9604	                                                        Hominidae
+  0.01	3	0	F1	207598	                                                          Homininae
+  0.01	3	0	G	9605	                                                            Homo
+  0.01	3	3	S	9606	                                                              Homo sapiens
+  0.00	1	0	D	10239	  Viruses
+  0.00	1	0	D1	35237	    dsDNA viruses, no RNA stage
+  0.00	1	0	O	28883	      Caudovirales
+  0.00	1	0	F	10699	        Siphoviridae
+  0.00	1	0	G	1623298	          Phietavirus
+  0.00	1	1	S	55511	            Staphylococcus virus 187

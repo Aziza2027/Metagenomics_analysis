@@ -1,0 +1,28 @@
+[2023-11-26 18:51:31,852] multiqc                                            [DEBUG  ]  This is MultiQC v1.17
+[2023-11-26 18:51:31,852] multiqc                                            [DEBUG  ]  Command used: /home/bio/miniconda3/envs/metagenomics/bin/multiqc data/bulk_bottom_fastqc.html data/bulk_bottom_fastqc.zip data/bulk_top_fastqc.html data/bulk_top_fastqc.zip data/rhizosphere_bottom_fastqc.html data/rhizosphere_bottom_fastqc.zip data/rhizosphere_top_fastqc.html data/rhizosphere_top_fastqc.zip
+[2023-11-26 18:51:33,029] multiqc                                            [DEBUG  ]  Could not connect to multiqc.info for version check: module 'packaging.version' has no attribute 'StrictVersion'
+[2023-11-26 18:51:33,030] multiqc                                            [DEBUG  ]  Working dir : /home/bio/projects/metagenomics
+[2023-11-26 18:51:33,030] multiqc                                            [DEBUG  ]  Template    : default
+[2023-11-26 18:51:33,030] multiqc                                            [DEBUG  ]  Running Python 3.12.0 | packaged by conda-forge | (main, Oct  3 2023, 08:43:22) [GCC 12.3.0]
+[2023-11-26 18:51:33,030] multiqc                                            [DEBUG  ]  Analysing modules: custom_content, ccs, ngsderive, purple, conpair, lima, peddy, somalier, methylQA, mosdepth, phantompeakqualtools, qualimap, preseq, hifiasm, quast, qorts, rna_seqc, rockhopper, rsem, rseqc, busco, bustools, goleft_indexcov, gffcompare, disambiguate, supernova, deeptools, sargasso, verifybamid, mirtrace, happy, mirtop, sambamba, gopeaks, homer, hops, macs2, theta2, snpeff, gatk, htseq, bcftools, featureCounts, fgbio, dragen, dragen_fastqc, dedup, pbmarkdup, damageprofiler, mapdamage, biobambam2, jcvi, mtnucratio, picard, vep, sentieon, bakta, prokka, qc3C, nanostat, samblaster, samtools, sexdeterrmine, eigenstratdatabasetools, bamtools, jellyfish, vcftools, longranger, stacks, varscan2, snippy, umitools, truvari, bbmap, bismark, biscuit, diamond, hicexplorer, hicup, hicpro, salmon, kallisto, slamdunk, star, hisat2, tophat, bowtie2, bowtie1, cellranger, snpsplit, odgi, pangolin, nextclade, freyja, humid, kat, leehom, librarian, adapterRemoval, bbduk, clipandmerge, cutadapt, flexbar, sourmash, kaiju, bracken, kraken, malt, motus, trimmomatic, sickle, skewer, sortmerna, biobloomtools, fastq_screen, afterqc, fastp, fastqc, filtlong, prinseqplusplus, pychopper, porechop, pycoqc, minionqc, anglerfish, multivcfanalyzer, clusterflow, checkqc, bcl2fastq, bclconvert, interop, ivar, flash, seqyclean, optitype, whatshap
+[2023-11-26 18:51:33,031] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /tmp/tmppwl3_mq6
+[2023-11-26 18:51:33,043] multiqc                                            [INFO   ]  Search path : /home/bio/projects/metagenomics/data/bulk_bottom_fastqc.html
+[2023-11-26 18:51:33,043] multiqc                                            [INFO   ]  Search path : /home/bio/projects/metagenomics/data/bulk_bottom_fastqc.zip
+[2023-11-26 18:51:33,043] multiqc                                            [INFO   ]  Search path : /home/bio/projects/metagenomics/data/bulk_top_fastqc.html
+[2023-11-26 18:51:33,043] multiqc                                            [INFO   ]  Search path : /home/bio/projects/metagenomics/data/bulk_top_fastqc.zip
+[2023-11-26 18:51:33,043] multiqc                                            [INFO   ]  Search path : /home/bio/projects/metagenomics/data/rhizosphere_bottom_fastqc.html
+[2023-11-26 18:51:33,043] multiqc                                            [INFO   ]  Search path : /home/bio/projects/metagenomics/data/rhizosphere_bottom_fastqc.zip
+[2023-11-26 18:51:33,044] multiqc                                            [INFO   ]  Search path : /home/bio/projects/metagenomics/data/rhizosphere_top_fastqc.html
+[2023-11-26 18:51:33,044] multiqc                                            [INFO   ]  Search path : /home/bio/projects/metagenomics/data/rhizosphere_top_fastqc.zip
+[2023-11-26 18:51:33,173] multiqc                                            [DEBUG  ]  Summary of files that were skipped by the search: [skipped_module_specific_max_filesize: 48] // [skipped_no_match: 4]
+[2023-11-26 18:51:33,737] multiqc.plots.bargraph                             [DEBUG  ]  Using matplotlib version 3.8.2
+[2023-11-26 18:51:33,739] multiqc.plots.linegraph                            [DEBUG  ]  Using matplotlib version 3.8.2
+[2023-11-26 18:51:33,740] multiqc                                            [DEBUG  ]  No samples found: custom_content
+[2023-11-26 18:51:33,757] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 4 reports
+[2023-11-26 18:51:33,864] multiqc.utils.software_versions                    [DEBUG  ]  Reading software versions from config.software_versions
+[2023-11-26 18:51:33,874] multiqc                                            [DEBUG  ]  Compressing plot data
+[2023-11-26 18:51:33,947] multiqc                                            [INFO   ]  Report      : multiqc_report.html
+[2023-11-26 18:51:33,947] multiqc                                            [INFO   ]  Data        : multiqc_data
+[2023-11-26 18:51:33,947] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmppwl3_mq6/multiqc_data' to '/home/bio/projects/metagenomics/multiqc_data'
+[2023-11-26 18:51:33,949] multiqc                                            [DEBUG  ]  Full report path: /home/bio/projects/metagenomics/multiqc_report.html
+[2023-11-26 18:51:34,102] multiqc                                            [INFO   ]  MultiQC complete

@@ -1,0 +1,2 @@
+ktImportText -n Sampe_2 sample2.tsv -o 2.html
+ktImportText -n Sampe_1 sample1.tsv -o 1.html
